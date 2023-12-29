@@ -1,0 +1,159 @@
+/* !!!--- Global ---!!! */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* This is how you can make a responsive design across a smaller screen */
+@media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .boxes .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        min-width: 100px;
+    }
+}
+
+
+/* !!!--- Body ---!!!*/
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #87ceeb;
+}
+
+p {
+    font-size: medium;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+/* !!!--- Navbar ---!!! */
+
+.navbar {
+    color: white;
+    height: 60px;
+    background-color: #5BBCE4;
+}
+
+.navbar .container {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .name {
+    font-size: large;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.navbar a:hover {
+    color: skyblue;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+
+/* !!!-- Header --!!! */
+
+.header .container {
+    display: flex;
+    min-height: 400px;
+    min-width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.header .container div > * {
+    margin: 0px 40px;
+
+}
+
+.header h1 {
+    padding-bottom: 15px;
+}
+
+.header p {
+    padding-bottom: 5px;
+}
+
+/* !!!--- Section ---!!! */
+
+.boxes {
+    background: #5BBCE4;
+    min-height: 400px;
+}
+
+.boxes .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: stretch;
+    padding-top: 25px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.boxes h2 {
+    font-size: large;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.boxes h3 {
+    font-size: x-small;
+    font-weight: 400;
+}
+
+.boxes p {
+    font-size: small;
+}
+
+.container .box {
+    background-color: #EBA487;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px #9b9b9b;
+    flex: 1 0 25%;
+    max-width: 250px;
+    /* min-width: 250px; */
+}
+
+.boxes a {
+    text-decoration: none;
+    color: black;
+}
